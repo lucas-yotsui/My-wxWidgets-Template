@@ -7,57 +7,20 @@ Este repositório é um template para criação de projetos em C++ com interface
 ## Criando seu Projeto
 
 A melhor forma de criar seu novo projeto baseado neste template é através da interface do site Github ou da aplicação de linha de comando própria do Github, uma vez que o recurso de template é exclusivo deste. Para isso, siga as seguintes instruções: 
-<style>
-    ol {
-        list-style: none;
-        counter-reset: item;
-    }
 
-    li {
-        counter-increment: item;
-        margin-bottom: 5px;
-    }
+1. Entre na página do Github desse template.  
 
-    li:before {
-        margin-right: 10px;
-        content: counter(item);
-        background: lightblue;
-        border-radius: 100%;
-        color: black;
-        width: 24px;
-        height: 24px;
-        text-align: center;
-        display: inline-block;
-    }
+2. Clique no botão verde que diz **Use this template**.
+![Usar este template](https://imgur.com/T2eswUz.png)
 
-    li:after {
-        content: " ";
-        display: block;
-        height: 10px
-    }
-</style>
-<ol>
-    <li>
-        Entre na página do Github desse template.
-        </li>
-    <li>
-        Clique no botão verde que diz <strong>Use this template</strong>.
-    </li>
-    <img src=https://imgur.com/T2eswUz.png style="margin: 0px 0px 20px"></img>
-    <li>
-        Clique na opção <strong>Create a new repository</strong>.
-    </li>
-    <li>
-        Escolha um nome e opcionalmente uma descrição para seu novo projeto.
-    </li>
-    <img src=https://imgur.com/dbtpLTF.png style="margin: 0px 0px 20px"></img>
-    <li>
-        Escolha a visibilidade que deseja para o repositório do seu projeto.
-    </li>
-    <li>
-        Clique em <strong>Create repository from template</strong>
-    </li>
-</ol>
+3. Clique na opção **Create a new repository**.
+
+4. Escolha um nome e opcionalmente uma descrição para seu novo projeto.
+![Criando seu repositório](https://imgur.com/dbtpLTF.png)
+
+5. Escolha a visibilidade que deseja para o repositório do seu projeto.
+
+6. Clique em **Create repository from template**.
 
 _**Observação:** Pode ser usada a linha de comando convencional do Git, porém o repositório será clonado da forma padrão, incluindo todas as informações de versionamento e autoria do projeto. Nesse caso é necessário abrir a pasta onde foi clonado e deletar o diretório _.git_._
 
@@ -72,44 +35,31 @@ Essa decisão de projeto proporciona essa facilidade de automatizar o processo d
 O projeto foi desenvolvido tendo em mente o uso do editor **Visual Studio Code**, uma vez que sua extensão **Cmake Tools** facilita o uso de CMake para compilação, removendo a necessidade de uso de repetidos comandos via terminal. Além desta extensão, é recomendada também a extensão **C/C++ Extension Pack**, para usar colorização de destaque de sintaxe e outros recursos que facilitam o desenvolvimento em C/C++ _(Inclusive essa extensão já inclui a CMake Tools)_.
 
 Utilizando o VS Code configurado desta forma, a compilação e execução do projeto é muito simples. Basta seguir o seguinte procedimento:
-<ol>
-    <li>
-        Abrir a pasta do projeto no editor.
-    </li>
-    <li>
-        Selecionar o kit de desenvolvimento usado pelo CMake.
-    </li>
-    <img src="https://imgur.com/f7UuZnn.png" style="margin: 0px 0px 20px"></img>
-    <li>
-        Aguardar a configuração inicial do CMake. Quando encerrada essa etapa, os recursos do wxWidgets já estão disponíveis para inclusão no código.
-    </li>
-    <li>
-        Basta agora compilar seu projeto com o comando <strong>Build</strong>. Para isso, clique neste botão da barra de utilidades da extensão CMake Tools.
-    </li>
-    <img src="https://imgur.com/8pqi8D7.png" style="margin: 0px 0px 20px"></img>
-    <li>
-        Encerrada a compilação, basta executar seu programa. Para isso, clique neste botão da barra de utilidades da extensão CMake Tools.
-    </li>
-    <img src="https://imgur.com/c3KchnQ.png" style="margin: 0px 0px 20px"></img>
-</ol>
+
+1. Abrir a pasta do projeto no editor.
+
+2. Selecionar o kit de desenvolvimento usado pelo CMake.
+![Selecione o kit desejado](https://imgur.com/f7UuZnn.png)
+
+3. Aguardar a configuração inicial do CMake. Quando encerrada essa etapa, os recursos do wxWidgets já estão disponíveis para inclusão no código.
+
+4. Basta agora compilar seu projeto com o comando **Build**. Para isso, clique neste botão da barra de utilidades da extensão CMake Tools.
+![Compilar](https://imgur.com/8pqi8D7.png)
+
+5. Encerrada a compilação, basta executar seu programa. Para isso, clique neste botão da barra de utilidades da extensão CMake Tools.
+![Executar](https://imgur.com/c3KchnQ.png)
 
 Incluso neste projeto está um arquivo _main.cpp_ contendo um programa de exemplo da biblioteca, o qual deve criar a seguinte janela no evento de compilação e execução bem-sucedidas:
 
-<img src="https://imgur.com/JkwFMVF.png" style="margin: 10px 0px 20px"></img>
+![Programa de exemplo](https://imgur.com/JkwFMVF.png)
 
 ## Observações
 
-<ol>
-    <li>
-        A primeira configuração e compilação do projeto são sempre as mais demoradas, uma vez que nestes casos é necessário baixar e compilar wxWidgets novamente. Portanto, na medida do possível, evite apagar o diretório _build_, pois dessa forma, esta dependência ainda estará presente e pronta.
-    </li>
-    <li>
-        O projeto cria um link estático entre a biblioteca wxWidgets e seu projeto, dessa forma os executáveis criados são independentes e podem ser separados do computador em que foram compilados livremente.
-    </li>
-    <li>
-        A biblioteca wxWidgets possui uma licença completamente livre de direitos autorais. Logo, pode ser utilizada em projetos pessoais e comerciais sem nenhum tipo de tarifa.
-    </li>
-</ol>
+1. A primeira configuração e compilação do projeto são sempre as mais demoradas, uma vez que nestes casos é necessário baixar e compilar wxWidgets novamente. Portanto, na medida do possível, evite apagar o diretório _build_, pois dessa forma, esta dependência ainda estará presente e pronta.
+
+2. O projeto cria um link estático entre a biblioteca wxWidgets e seu projeto, dessa forma os executáveis criados são independentes e podem ser separados do computador em que foram compilados livremente.
+
+3. A biblioteca wxWidgets possui uma licença completamente livre de direitos autorais. Logo, pode ser utilizada em projetos pessoais e comerciais sem nenhum tipo de tarifa.
 
 ## Considerações Finais
 
