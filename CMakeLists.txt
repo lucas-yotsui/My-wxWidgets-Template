@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.11 FATAL_ERROR)
 project(my_project LANGUAGES CXX)
 
-# Using C17 and C++20
+# Using C++20
 set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
@@ -9,17 +9,17 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(wxWidgets_USE_STATIC 1)
 set(wxBUILD_SHARED OFF)
 
-# Include fetch content module
+# Include FetchContent module
 include(FetchContent)
 
-# Fetch wxWidgets dependency declare
+# Fetch wxWidgets dependency statement declaration
 FetchContent_Declare(
     wxWidgets
     GIT_REPOSITORY
-    https://github.com/wxWidgets/wxWidgets.git
+        https://github.com/wxWidgets/wxWidgets.git
     GIT_TAG
-    v3.1.4
-    )
+        v3.1.4
+)
 
 # Message to inform user that script is not bugged, just busy resolving dependecy
 message(STATUS "Baixando wxWidgets e incluindo-o no projeto")
