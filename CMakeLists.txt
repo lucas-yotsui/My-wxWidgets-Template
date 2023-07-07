@@ -27,8 +27,8 @@ if(NOT wxWidgets_POPULATED)
     add_subdirectory(${wxwidgets_SOURCE_DIR} ${wxwidgets_BUILD_DIR})
 endif()
 
-set(HEADERS ${CMAKE_CURRENT_LIST_DIR}/include/*.h)
-set(SOURCES ${CMAKE_CURRENT_LIST_DIR}/source/*.cpp)
+file(GLOB_RECURSE HEADERS ${CMAKE_CURRENT_LIST_DIR}/include/*.h)
+file(GLOB_RECURSE SOURCES ${CMAKE_CURRENT_LIST_DIR}/source/*.cpp)
 
 add_executable(main WIN32 ${SOURCES} ${HEADERS})
 
