@@ -28,7 +28,7 @@ _**Observação:** Pode ser usada a linha de comando convencional do Git, porém
 
 ## Compilando e Executando
 
-O projeto foi desenvolvido com o intuito de poder ser compilado em um ambiente Linux ou Windows, entretanto foi testado somente no Windows com MinGW, com Clang e GCC.
+O projeto foi desenvolvido com o intuito de poder ser compilado em um ambiente Linux ou Windows, entretanto foi testado somente no Windows com MinGW, compilando com Clang e GCC.
 
 Conforme dito na introdução, o projeto foi desenvolvido utilizando CMake de tal forma que quando executado o comando para build, será instalado o wxWidgets automaticamente para compilação. Para isso, é clonado o repositório dessa biblioteca via Git e compilado, de forma a evitar a necessidade de possuir essa biblioteca instalada localmente. 
 
