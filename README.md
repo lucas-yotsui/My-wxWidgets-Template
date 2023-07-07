@@ -4,7 +4,7 @@
 
 Este repositório é um template para criação de projetos em C++ com interface gráfica para usuário utilizando a biblioteca wxWidgets. Por ser configurado como um template no Github, é possível cloná-lo sem copiar as informações de controle de versão deste. Dessa forma, seu projeto criado a partir de um clone deste template é tratado como novo e suas informações de controle de versão serão exclusivamente referentes a ele.
 
-## Criando seu projeto
+## Criando seu Projeto
 
 A melhor forma de criar seu novo projeto baseado neste template é através da interface do site Github ou da aplicação de linha de comando própria do Github, uma vez que o recurso de template é exclusivo deste. Para isso, siga as seguintes instruções: 
 <style>
@@ -50,7 +50,7 @@ A melhor forma de criar seu novo projeto baseado neste template é através da i
     <li>
         Escolha um nome e opcionalmente uma descrição para seu novo projeto.
     </li>
-    <img src=https://imgur.com/E4Ea0Ab.png style="margin: 0px 0px 20px"></img>
+    <img src=https://imgur.com/dbtpLTF.png style="margin: 0px 0px 20px"></img>
     <li>
         Escolha a visibilidade que deseja para o repositório do seu projeto.
     </li>
@@ -61,7 +61,7 @@ A melhor forma de criar seu novo projeto baseado neste template é através da i
 
 _**Observação:** Pode ser usada a linha de comando convencional do Git, porém o repositório será clonado da forma padrão, incluindo todas as informações de versionamento e autoria do projeto. Nesse caso é necessário abrir a pasta onde foi clonado e deletar o diretório _.git_._
 
-## Compilando
+## Compilando e Executando
 
 O projeto foi desenvolvido com o intuito de poder ser compilado em um ambiente Linux ou Windows, entretanto foi testado somente no Windows com MinGW, com Clang e GCC.
 
@@ -94,5 +94,29 @@ Utilizando o VS Code configurado desta forma, a compilação e execução do pro
 </ol>
 
 Incluso neste projeto está um arquivo _main.cpp_ contendo um programa de exemplo da biblioteca, o qual deve criar a seguinte janela no evento de compilação e execução bem-sucedidas:
-    <img src="https://imgur.com/c3KchnQ.png" style="margin: 10px 0px 20px"></img>
 
+<img src="https://imgur.com/JkwFMVF.png" style="margin: 10px 0px 20px"></img>
+
+## Observações
+
+<ol>
+    <li>
+        A primeira configuração e compilação do projeto são sempre as mais demoradas, uma vez que nestes casos é necessário baixar e compilar wxWidgets novamente. Portanto, na medida do possível, evite apagar o diretório _build_, pois dessa forma, esta dependência ainda estará presente e pronta.
+    </li>
+    <li>
+        O projeto cria um link estático entre a biblioteca wxWidgets e seu projeto, dessa forma os executáveis criados são independentes e podem ser separados do computador em que foram compilados livremente.
+    </li>
+    <li>
+        A biblioteca wxWidgets possui uma licença completamente livre de direitos autorais. Logo, pode ser utilizada em projetos pessoais e comerciais sem nenhum tipo de tarifa.
+    </li>
+</ol>
+
+## Considerações Finais
+
+Caso possua alguma sugestão, dúvida ou encontre algum problema durante o uso deste template, por favor sinta-se a vontade para criar uma _**Issue**_ ou um _**Pull request**_.
+
+Espero que este projeto lhe seja útil, especialmente para aqueles que ainda estão começando a aprender programação no geral ou especificamente em C++. A linguagem por si só pode ser intimidadora e complexa, sendo até mesmo seu processo de compilação muito complexo, há a compilação manual por comandos de terminal; CMake ou Makefiles para a criação de scripts automatizados, cada um com sua sintaxe e recursos específicos; link estático ou dinâmico de bibliotecas; múltiplos compiladores diferentes; etc.
+
+Nesse cenário, a possibilidade de oferecer uma facilidade em parte desse processo é com certeza algo de muito auxílio no aprendizado desta poderosa, porém complexa ferramenta. 
+
+Espero também que a documentação seja eficiente para entender não somente como utilizar o projeto, mas também seu funcionamento e lógica subjacente, para que possibilite aprender um pouco mais sobre a ferramenta CMake e o processo de compilação de um programa em C/C++.
