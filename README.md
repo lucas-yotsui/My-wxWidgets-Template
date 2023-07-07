@@ -11,11 +11,13 @@ A melhor forma de criar seu novo projeto baseado neste template é através da i
 1. Entre na página do Github desse template.  
 
 2. Clique no botão verde que diz **Use this template**.
+
 ![Usar este template](https://imgur.com/T2eswUz.png)
 
 3. Clique na opção **Create a new repository**.
 
 4. Escolha um nome e opcionalmente uma descrição para seu novo projeto.
+
 ![Criando seu repositório](https://imgur.com/dbtpLTF.png)
 
 5. Escolha a visibilidade que deseja para o repositório do seu projeto.
@@ -39,14 +41,17 @@ Utilizando o VS Code configurado desta forma, a compilação e execução do pro
 1. Abrir a pasta do projeto no editor.
 
 2. Selecionar o kit de desenvolvimento usado pelo CMake.
+
 ![Selecione o kit desejado](https://imgur.com/f7UuZnn.png)
 
 3. Aguardar a configuração inicial do CMake. Quando encerrada essa etapa, os recursos do wxWidgets já estão disponíveis para inclusão no código.
 
 4. Basta agora compilar seu projeto com o comando **Build**. Para isso, clique neste botão da barra de utilidades da extensão CMake Tools.
+
 ![Compilar](https://imgur.com/8pqi8D7.png)
 
 5. Encerrada a compilação, basta executar seu programa. Para isso, clique neste botão da barra de utilidades da extensão CMake Tools.
+
 ![Executar](https://imgur.com/c3KchnQ.png)
 
 Incluso neste projeto está um arquivo _main.cpp_ contendo um programa de exemplo da biblioteca, o qual deve criar a seguinte janela no evento de compilação e execução bem-sucedidas:
