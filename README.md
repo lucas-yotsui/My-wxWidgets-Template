@@ -46,6 +46,8 @@ Utilizando o VS Code configurado desta forma, a compilação e execução do pro
 
 3. Aguardar a configuração inicial do CMake. Quando encerrada essa etapa, os recursos do wxWidgets já estão disponíveis para inclusão no código.
 
+**OBS: Após essa configuração inicial, possivelmente aparecerão muitos warnings da compilação do wxWidgets. Fique tranquilo, esses warnings não são do seu projeto e após o build do projeto eles devem desaparecer (desde que realmente não sejam do seu código, preste atenção sempre às mensagens dos warnings)**
+
 4. Basta agora compilar seu projeto com o comando **Build**. Para isso, clique neste botão da barra de utilidades da extensão CMake Tools.
 
 ![Compilar](https://imgur.com/8pqi8D7.png)
