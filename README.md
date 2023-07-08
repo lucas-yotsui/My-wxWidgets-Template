@@ -52,7 +52,7 @@ Utilizando o VS Code configurado desta forma, a compilação e execução do pro
 
 ![Compilar](https://imgur.com/8pqi8D7.png)
 
-5. Encerrada a compilação, basta executar seu programa. Para isso, clique neste botão da barra de utilidades da extensão CMake Tools.
+5. Encerrada a compilação, você já pode executar seu programa. Para isso, clique neste botão da barra de utilidades da extensão CMake Tools.
 
 ![Executar](https://imgur.com/c3KchnQ.png)
 
