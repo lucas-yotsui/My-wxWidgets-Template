@@ -55,14 +55,17 @@ MyFrame::MyFrame(const wxString& title, const wxPoint& pos, const wxSize& size)
 }
 void MyFrame::OnExit(wxCommandEvent& event)
 {
+    event.Skip();
     Close( true );
 }
 void MyFrame::OnAbout(wxCommandEvent& event)
 {
+    event.Skip();
     wxMessageBox( "This is a wxWidgets' Hello world sample",
                   "About Hello World", wxOK | wxICON_INFORMATION );
 }
 void MyFrame::OnHello(wxCommandEvent& event)
 {
+    event.Skip();
     wxLogMessage("Hello world from wxWidgets!");
 }
