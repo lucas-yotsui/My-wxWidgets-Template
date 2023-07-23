@@ -4,6 +4,16 @@
 
 Este repositório é um template para criação de projetos em C++ com interface gráfica para usuário utilizando a biblioteca wxWidgets. Por ser configurado como um template no Github, é possível cloná-lo sem copiar as informações de controle de versão deste. Dessa forma, seu projeto criado a partir de um clone deste template é tratado como novo e suas informações de controle de versão serão exclusivamente referentes a ele.
 
+## Pré-Requisitos
+
+Para utilizar este projeto, é necessário que você tenha:
+
+1. Um kit de desenvolvimento C/C++ (compilador, debugger, etc).
+
+2. Cmake instalado e adicionado ao PATH.
+
+Estes são os recursos obrigatórios para o uso deste projeto. Entretanto, também é recomendado o uso do editor **Visual Studio Code** com o pacote de extensões **C/C++ Extension Pack** para facilitar seu uso.
+
 ## Criando seu Projeto
 
 A melhor forma de criar seu novo projeto baseado neste template é através da interface do site Github ou da aplicação de linha de comando própria do Github, uma vez que o recurso de template é exclusivo deste. Para isso, siga as seguintes instruções: 
